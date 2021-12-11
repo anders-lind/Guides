@@ -75,3 +75,7 @@ To install the pylon 6 Camera Software Suite in /opt/pylon follow these steps:
 
   5. Change access rights of the pylon folder:
      - `sudo chmod 755 /opt/pylon`
+
+
+### Test ###
+- Use the small program in [this repo](https://github.com/anders-lind/Tests/tree/main/Test%20of%20Pylon%20with%20OpenCV), to test if Pylon is working (requiers OpenCV and a Basler camera)
