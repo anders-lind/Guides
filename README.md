@@ -37,3 +37,41 @@
 - `ldconfig`  
 - `exit`  
 - `cd ~`  
+
+
+## How to install Pylon camera software suite on Ubuntu ([based on this guide](https://www.baslerweb.com/en/products/cameras/area-scan-cameras/ace/aca1440-220uc/))
+
+
+### Download the Basler Pylon Camera Software Suite ###
+- Go to https://www.baslerweb.com/en/products/cameras/area-scan-cameras/ace/aca1440-220uc/
+- Follow the link under Software, and find "pylon 6.3.0 Camera Software Suite Linux x86 (64 Bit)" [Direct link](https://www.baslerweb.com/en/sales-support/downloads/software-downloads/software-pylon-6-3-0-linux-x86-64bit/) 
+  - Or choose a newer version
+  - [Direct dowload link](https://www.baslerweb.com/fp-1636374975/media/downloads/software/pylon_software/pylon_6.3.0.23157_x86_64_setup.tar.gz)
+
+
+### Installation using tar.gz files ###
+_This part is copied from the installation instructions in the downloaded material_
+
+This installation procedure assumes that you are going to install the
+pylon Camera Software Suite in the /opt/pylon directory. If you choose
+to install in a different directory, you'll have to modify the 
+directory names accordingly.
+Note: Root permissions are needed to write to /opt.
+
+To install the pylon 6 Camera Software Suite in /opt/pylon follow these steps:
+
+  1. Change to the directory that contains the pylon setup tar.gz archive that you downloaded from the Basler website.
+     - `cd ~Downlaods`
+
+  2. Extract the setup tar.gz archive into a directory of your choice
+     - `mkdir ./pylon_setup`
+     - `tar -C ./pylon_setup -xzf ./pylon_*_setup.tar.gz`
+
+  3. Change to the directory into which you extracted the setup tar.gz:
+     - `cd ./pylon_setup`
+     
+  4. Extract the pylon SDK into /opt/pylon:
+     - `sudo tar -C /opt/pylon -xzf ./pylon_*.tar.gz`
+
+  5. Change access rights of the pylon folder:
+     - `sudo chmod 755 /opt/pylon`
