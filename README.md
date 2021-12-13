@@ -1,4 +1,5 @@
-# How to install OpenCV on Ubuntu ([based on this guide](http://www.codebind.com/cpp-tutorial/install-opencv-ubuntu-cpp/))
+# How to install OpenCV on Ubuntu 
+[Based on this guide](http://www.codebind.com/cpp-tutorial/install-opencv-ubuntu-cpp/)
 
 ## Step 1 – Updating Ubuntu
 - `sudo apt-get update`  
@@ -37,8 +38,8 @@
 - `cd ~`  
 
 
-# How to install Pylon camera software suite on Ubuntu ([based on this guide](https://www.baslerweb.com/en/products/cameras/area-scan-cameras/ace/aca1440-220uc/))
-
+# How to install Pylon camera software suite on Ubuntu
+ [Based on this guide](https://www.baslerweb.com/en/products/cameras/area-scan-cameras/ace/aca1440-220uc/)
 
 ## Download the Basler Pylon Camera Software Suite ###
 - Go to https://www.baslerweb.com/en/products/cameras/area-scan-cameras/ace/aca1440-220uc/
@@ -47,7 +48,7 @@
   - [Direct dowload link](https://www.baslerweb.com/fp-1636374975/media/downloads/software/pylon_software/pylon_6.3.0.23157_x86_64_setup.tar.gz)
 
 
-## Installation using tar.gz files ###
+## Installation using tar.gz files ##
 _This part is copied from the installation instructions in the downloaded material_
 
 This installation procedure assumes that you are going to install the
@@ -74,6 +75,13 @@ To install the pylon 6 Camera Software Suite in /opt/pylon follow these steps:
   5. Change access rights of the pylon folder:
      - `sudo chmod 755 /opt/pylon`
 
+## Problems
+- Working library, but not showing up in projects or pylonviewer
+  - Make sure the camaera is connected via a USB-3 connection
+  - Try restarting 
+  - Try isntalling via the .deb file
+
 
 ## Test
+- Run the command `/opt/pylon/bin/pylonviewer` and you sould be able to select the camera under USB
 - Use the small program in [this repo](https://github.com/anders-lind/Tests/tree/main/Test%20of%20Pylon%20with%20OpenCV), to test if Pylon is working (requiers OpenCV and a Basler camera)
