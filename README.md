@@ -79,7 +79,7 @@ To install the pylon 6 Camera Software Suite in /opt/pylon follow these steps:
 - Working library, but not showing up in projects or pylonviewer
   - Make sure the camaera is connected via a USB-3 connection
   - Try restarting 
-  - Try isntalling via the .deb file
+  - Try installing via the .deb file
 
 
 ## Test
