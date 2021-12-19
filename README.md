@@ -85,3 +85,8 @@ To install the pylon 6 Camera Software Suite in /opt/pylon follow these steps:
 ## Test
 - Run the command `/opt/pylon/bin/pylonviewer` and you sould be able to select the camera under USB
 - Use the small program in [this repo](https://github.com/anders-lind/Tests/tree/main/Test%20of%20Pylon%20with%20OpenCV), to test if Pylon is working (requiers OpenCV and a Basler camera)
+
+
+# How to install video codecs on Ubuntu
+[Based on this guide](https://linuxhint.com/install_multimedia_codecs_ubuntu/)
+- 'sudo apt install ubuntu-restricted-extras'
