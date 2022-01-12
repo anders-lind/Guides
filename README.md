@@ -1,4 +1,34 @@
-# How to install OpenCV on Ubuntu 
+# What is this?
+- This is a collection of guides for installing different software on Ubuntu.
+- It is created primarilay as a way for me personally to minimize time spent installing sofware, i have succesfully installed before.
+- You are free to use theses guides and i hope they can help you.
+
+
+# How to create a minecraft server with Byobu
+[Based on this guide](https://www.youtube.com/watch?v=Yxi_If6JGTQ)
+
+- Byobu will be used to run the server, without having a terminal window open all the time.
+
+
+### Step 1 - Download java and byobu
+- `sudo apt install openjdk-17-jdk byobu`
+
+### Step 2 - Dowload the minecraft server
+- [https://www.minecraft.net/en-us/download/server](https://www.minecraft.net/en-us/download/server)
+
+### Step 3 - Change to the directory you want the server to be located in, and accept the eula
+- `cd ~/Downloads`
+- `echo eula=true >> eula.txt`
+
+### Step 4 - Start the server in Byobu
+- `byobu`
+- `java -Xmx1024M -Xms1024M -java server.jar nogui`
+- Stop the server by typing `stop` in Byobu
+- Exit Byobu by pressing `F6` (Byobu, and therefore the server, will still be running in the background.)
+
+
+
+# How to install OpenCV 
 [Based on this guide](http://www.codebind.com/cpp-tutorial/install-opencv-ubuntu-cpp/)
 
 ## Step 1 – Updating Ubuntu
@@ -38,7 +68,10 @@
 - `cd ~`  
 
 
-# How to install Pylon camera software suite on Ubuntu
+
+
+
+# How to install Pylon camera software suite
  [Based on this guide](https://www.baslerweb.com/en/products/cameras/area-scan-cameras/ace/aca1440-220uc/)
 
 ## Download the Basler Pylon Camera Software Suite ###
@@ -87,6 +120,9 @@ To install the pylon 6 Camera Software Suite in /opt/pylon follow these steps:
 - Use the small program in [this repo](https://github.com/anders-lind/Tests/tree/main/Test%20of%20Pylon%20with%20OpenCV), to test if Pylon is working (requiers OpenCV and a Basler camera)
 
 
-# How to install video codecs on Ubuntu
+
+
+
+# How to install video codecs
 [Based on this guide](https://linuxhint.com/install_multimedia_codecs_ubuntu/)
 - 'sudo apt install ubuntu-restricted-extras'
