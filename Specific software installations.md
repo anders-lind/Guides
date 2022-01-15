@@ -4,27 +4,80 @@
 - You are free to use theses guides and i hope they can help you.
 
 
-# How to create a minecraft server with Byobu
-[Based on this guide](https://www.youtube.com/watch?v=Yxi_If6JGTQ)
 
-- Byobu will be used to run the server, without having a terminal window open all the time.
+
+
+
+
+# How to create a modded minecraft server with Forge
+- A vanilla Minecraft client installation is required
 
 
 ### Step 1 - Download java and byobu
-- `sudo apt install openjdk-17-jdk byobu`
+- `sudo apt install openjdk-8-jdk`
 
-### Step 2 - Dowload the minecraft server
-- [https://www.minecraft.net/en-us/download/server](https://www.minecraft.net/en-us/download/server)
 
-### Step 3 - Change to the directory you want the server to be located in, and accept the eula
-- `cd ~/Downloads`
-- `echo eula=true >> eula.txt`
+### Step 2 - Find the correct version of Minecraft
+- I want to install the mods "[The Twillight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files?sort=-game-version)", "[ConnectedTexturesMod](https://www.curseforge.com/minecraft/mc-mods/ctm/files?sort=-game-version)", "[mantle (required by Tinkers Construct)](https://www.curseforge.com/minecraft/mc-mods/mantle/download/2713386)" and "[Tinkers Construct](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct/files?sort=-game-version)"
+- Their highest shared Minecraft version is 1.12.2
 
-### Step 4 - Start the server in Byobu
-- `byobu`
-- `java -Xmx1024M -Xms1024M -java server.jar nogui`
-- Stop the server by typing `stop` in Byobu
-- Exit Byobu by pressing `F6` (Byobu, and therefore the server, will still be running in the background.)
+
+### Step 3 - Download the mods and the Forge installer 
+- Download the correct version of the mods using your browser
+  - [https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files?sort=-game-version](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files?sort=-game-version)
+  - [https://www.curseforge.com/minecraft/mc-mods/ctm/files?sort=-game-version](https://www.curseforge.com/minecraft/mc-mods/ctm/files?sort=-game-version)
+  - [https://www.curseforge.com/minecraft/mc-mods/tinkers-construct/files?sort=-game-version](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct/files?sort=-game-version)
+  - [https://www.curseforge.com/minecraft/mc-mods/mantle/download/2713386](https://www.curseforge.com/minecraft/mc-mods/mantle/download/2713386)
+-  Download the Forge installer manually or using the wget-command with a direct link to the download
+  - https://files.minecraftforge.net/net/minecraftforge/forge/
+  - `wget https://maven.minecraftforge.net/net/minecraftforge/forge/1.12.2-14.23.5.2859/forge-1.12.2-14.23.5.2859-installer.jar`
+
+
+### step 4 - Install Forge client and server
+- Create and enter the directory you want to store the server
+  - `mkdir ~/minecraft_Forge_server`
+  - `cd ~/minecraft_Forge_server`
+- Move the Forge installer into this directory
+  - `mv ~/Downloads/forge-1.12.2-14.23.5.2859-installer.jar .`
+- Install the server by running the installation file with "--installServer" as parameter
+  - `java -jar forge-1.12.2-14.23.5.2859-installer.jar -installServer`
+- Install the client by running the installation file
+  - `java -jar forge-1.12.2-14.23.5.2859-installer.jar`
+  - Choose "Install client"
+  - The directory of your Minecraft installation is probably the default `/home/username/.minecraft`
+- Delete the Forge installer as it is no longer required
+  - `rm forge-1.12.2-14.23.5.2859-installer.jar`
+  - `rm forge-1.12.2-14.23.5.2859-installer.jar.log 
+- Run the server file to initialize folders (Error fix in footnote *1* of this guide)
+  - `java -Xmx1024M -Xms1024M -jar forge-1.12.2-14.23.5.2859.jar nogui`
+  - This should have created a "mods" and a "logs" folder and a "eula.txt" file
+
+
+### Step 5 - Install the mods
+- Install the mods on the server by moving them to the servers mods folder
+  - `mv -t ~/minecraft_Forge_server/mods ~/Downloads/CTM-MC1.12.2-1.0.2.31.jar  ~/Downloads/TConstruct-1.12.2-2.13.0.183.jar  ~/Downloads/twilightforest-1.12.2-3.10.1013-universal.jar ~/Downloads/Mantle-1.12-1.3.3.55.jar`
+- Install the mods on the client by copying them to the client mods folder
+  - `cp -t ~/.minecraft/mods ~/minecraft_Forge_server/mods/CTM-MC1.12.2-1.0.2.31.jar  ~/minecraft_Forge_server/mods/TConstruct-1.12.2-2.13.0.183.jar  ~/minecraft_Forge_server/mods/twilightforest-1.12.2-3.10.1013-universal.jar ~/minecraft_Forge_server/mods/Mantle-1.12-1.3.3.55.jar`
+
+
+### Step 6 - Start and join the server
+- Accept the EULA
+  - `nano eula.txt`
+  - Make sure a line in the file says "eula=true"
+- Start the server
+  - `java -Xmx1024M -Xms1024M -jar forge-1.12.2-14.23.5.2859.jar nogui`
+- Join the server by starting normal Minecraft and choosig the Forge installation
+- Then join the server as you normally would normally
+
+## Errors and how to fix them
+1. "A problem occurred running the Server launcher.java.lang.reflect.InvocationTargetException"
+   - Switch to java version 8
+     - sudo update-alternatives --config java
+
+
+
+
+
 
 
 
@@ -66,6 +119,10 @@
 - `ldconfig`  
 - `exit`  
 - `cd ~`  
+
+
+
+
 
 
 
@@ -118,6 +175,10 @@ To install the pylon 6 Camera Software Suite in /opt/pylon follow these steps:
 ## Test
 - Run the command `/opt/pylon/bin/pylonviewer` and you sould be able to select the camera under USB
 - Use the small program in [this repo](https://github.com/anders-lind/Tests/tree/main/Test%20of%20Pylon%20with%20OpenCV), to test if Pylon is working (requiers OpenCV and a Basler camera)
+
+
+
+
 
 
 
