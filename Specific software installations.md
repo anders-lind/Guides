@@ -13,10 +13,10 @@
 
 ### Step 3 - Download the mods and the Forge installer 
 - Download the correct version of the mods using your browser
-  - [https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files?sort=-game-version]()
-  - [https://www.curseforge.com/minecraft/mc-mods/ctm/files?sort=-game-version]()
-  - [https://www.curseforge.com/minecraft/mc-mods/tinkers-construct/files?sort=-game-version]()
-  - [https://www.curseforge.com/minecraft/mc-mods/mantle/files?sort=-game-version]()
+  - https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files?sort=-game-version
+  - https://www.curseforge.com/minecraft/mc-mods/ctm/files?sort=-game-version
+  - https://www.curseforge.com/minecraft/mc-mods/tinkers-construct/files?sort=-game-version
+  - https://www.curseforge.com/minecraft/mc-mods/mantle/files?sort=-game-version
 -  Download the Forge installer manually or using the wget-command with a direct link to the download
   - https://files.minecraftforge.net/net/minecraftforge/forge/
   - `wget https://maven.minecraftforge.net/net/minecraftforge/forge/1.12.2-14.23.5.2859/forge-1.12.2-14.23.5.2859-installer.jar`
