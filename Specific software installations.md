@@ -1,16 +1,3 @@
-# What is this?
-- This is a collection of guides for installing different software on Ubuntu.
-- It is created primarilay as a way for me personally to minimize time spent installing sofware, i have succesfully installed before.
-- You are free to use theses guides and i hope they can help you.
-
-<!--- Vertical blanc space --->
-<img src="https://user-images.githubusercontent.com/32484749/149629392-40155cb0-fccf-481f-933e-d2d0748ce457.png" height="100" />
-
-
-
-
-
-
 # How to create a modded minecraft server with Forge
 - A vanilla Minecraft client installation is required
 
