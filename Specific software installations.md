@@ -3,6 +3,8 @@
 - It is created primarilay as a way for me personally to minimize time spent installing sofware, i have succesfully installed before.
 - You are free to use theses guides and i hope they can help you.
 
+<!--- Vertical blanc space --->
+<img src="https://user-images.githubusercontent.com/32484749/149629392-40155cb0-fccf-481f-933e-d2d0748ce457.png" height="100" />
 
 
 
@@ -74,7 +76,8 @@
    - Switch to java version 8
      - sudo update-alternatives --config java
 
-
+<!--- Vertical blanc space --->
+<img src="https://user-images.githubusercontent.com/32484749/149629392-40155cb0-fccf-481f-933e-d2d0748ce457.png" height="100" />
 
 
 
@@ -120,8 +123,8 @@
 - `exit`  
 - `cd ~`  
 
-
-
+<!--- Vertical blanc space --->
+<img src="https://user-images.githubusercontent.com/32484749/149629392-40155cb0-fccf-481f-933e-d2d0748ce457.png" height="100" />
 
 
 
@@ -176,8 +179,8 @@ To install the pylon 6 Camera Software Suite in /opt/pylon follow these steps:
 - Run the command `/opt/pylon/bin/pylonviewer` and you sould be able to select the camera under USB
 - Use the small program in [this repo](https://github.com/anders-lind/Tests/tree/main/Test%20of%20Pylon%20with%20OpenCV), to test if Pylon is working (requiers OpenCV and a Basler camera)
 
-
-
+<!--- Vertical blanc space --->
+<img src="https://user-images.githubusercontent.com/32484749/149629392-40155cb0-fccf-481f-933e-d2d0748ce457.png" height="100" />
 
 
 
