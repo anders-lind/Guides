@@ -16,7 +16,7 @@
     - ``g++ --version``
     - ``gdb --version``
   - Now create a C++ program called helloworld.cpp
-  - Compile the program with g++ from a command prompt in the same directory as the program
+  - Compile the program with g++ from a command prompt in the same directory as the program [For more compilation options](https://courses.cs.washington.edu/courses/cse373/99au/unix/g++.html)
     - `g++ -o exeName helloworld.cpp`
   - This creates an executable called "exeName"
   - Execute "exeName" from command prompt
