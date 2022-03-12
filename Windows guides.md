@@ -23,6 +23,10 @@
     - `.\exename` or `.\exename.exe`
 
 
+<!--- Vertical blanc space --->
+<img src="https://user-images.githubusercontent.com/32484749/149629392-40155cb0-fccf-481f-933e-d2d0748ce457.png" height="100" />
+
+
 # How to uninstall Cortana
 [Based on this guide](https://www.tomsguide.com/news/how-to-uninstall-cortana)
 - Open Windows PowerShell as administator
