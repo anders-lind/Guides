@@ -21,3 +21,9 @@
   - This creates an executable called "exeName"
   - Execute "exeName" from command prompt
     - `.\exename` or `.\exename.exe`
+
+
+# How to uninstall Cortana
+[Based on this guide](https://www.tomsguide.com/news/how-to-uninstall-cortana)
+- Open Windows PowerShell as administator
+  - `Get-AppxPackage -allusers Microsoft.549981C3F5F10 | Remove-AppxPackage`
