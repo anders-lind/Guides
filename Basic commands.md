@@ -1,3 +1,6 @@
+## Remove a directory
+- `rm -r -f some/directory/path`
+
 ## Install a .deb file
 - `sudo apt install ./example-file-name.deb`
 
