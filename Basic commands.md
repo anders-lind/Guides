@@ -3,6 +3,8 @@
 
 
 ## Clone a directory from Github
+Download all files from a Git directory
+- `cd ~/some/dir`
 - `git clone https://github.com/anders-lind/Ubuntu-guides`
 
 
