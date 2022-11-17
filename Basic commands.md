@@ -1,5 +1,12 @@
-## Remove a directory
-- `rm -r -f some/directory/path`
+## Remove a folder
+- `rm -r -f some/folder/path`
+
+## Moving a folder or file
+- `mv path/to/file/or/folder new/path/to/folder/or/file` 
+
+## Rename a folder
+Renaming a folder is done by "moving" it, and giving it a new name
+- `mv path/to/old_name path/to/new_name`
 
 ## Install a .deb file
 - `sudo apt install ./example-file-name.deb`
