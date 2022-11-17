@@ -2,6 +2,9 @@
 - `sudo apt install ./example-file-name.deb`
 
 
+## Clone a directory from Github
+- `git clone https://github.com/anders-lind/Ubuntu-guides`
+
 
 ## Make a file executable (ex a .appimage file)
 - `chmod a+x example-file-name.AppImage`
