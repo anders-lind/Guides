@@ -11,6 +11,12 @@ Renaming a folder is done by "moving" it, and giving it a new name
 ## Install a .deb file
 - `sudo apt install ./example-file-name.deb`
 
+## Install a .run file
+- Make it executeable
+  - `chmod +x some-app.run`
+- Run it
+  - `sudo ./some-app.run`
+
 
 ## Clone a directory from Github
 Download all files from a Git directory
