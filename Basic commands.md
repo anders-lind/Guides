@@ -40,6 +40,10 @@ Enter the build folder and make the project
 - `cmake DCMAKE_BUILD_TYPE=Debug ../src/`
 
 
+## Extract file.tar.gz archive [https://linuxize.com/post/how-to-extract-unzip-tar-gz-file/](https://linuxize.com/post/how-to-extract-unzip-tar-gz-file/)  (https://linuxize.com/post/how-to-extract-unzip-tar-gz-file/)[https://linuxize.com/post/how-to-extract-unzip-tar-gz-file/]
+- `tar -xf archive.tar.gz`
+- 
+
 
 # Git in terminal
 ## Clone a directory
