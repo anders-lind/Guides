@@ -42,7 +42,11 @@ Enter the build folder and make the project
 
 ## Extract file.tar.gz archive
 - `tar -xf archive.tar.gz`
-- 
+
+## Add folder to $PATH
+- Add "/new/path" to path file
+- sudo nano /etc/environment
+https://askubuntu.com/questions/500775/permanent-path-variable
 
 
 # Git in terminal
