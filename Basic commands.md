@@ -11,6 +11,10 @@ Renaming a folder is done by "moving" it, and giving it a new name
 - `mv path/to/old_name path/to/new_name`
 
 
+## Open a folder or file, with default application
+- `xdg-open some/folder/or/file`
+
+
 ## Install a .deb file
 - `sudo apt install ./example-file-name.deb`
 
