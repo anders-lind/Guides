@@ -59,8 +59,20 @@ Download all files from a Git directory
 - `cd ~/some/dir`
 - `git clone https://github.com/anders-lind/Ubuntu-guides`
 
+## Branch commands
+- Create new local branch
+  - `git branch branch_name`
+- Switch branch
+  - `git checkout branch_name`
+- Create new remote branch
+  - Create new local branch
+  - Switch to new branch
+  - Upload local branch as remote
+    - `git push -u origin <branch>`
+
 ## Basic commands
 - `git status`
 - `git pull`
 - `Git commit`
 - `git push`
+
