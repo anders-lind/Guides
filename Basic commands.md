@@ -54,6 +54,12 @@ https://askubuntu.com/questions/500775/permanent-path-variable
 
 
 # Git in terminal
+## Basic commands
+- `git status`
+- `git pull`
+- `Git commit`
+- `git push`
+
 ## Clone a directory
 Download all files from a Git directory
 - `cd ~/some/dir`
